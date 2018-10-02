@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/locationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/challengeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dropperbutton" />
+
+    <ImageButton
+        android:id="@+id/challengeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="131dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/challengebutton" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="198dp"
+        android:layout_height="188dp"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginRight="93dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/locationButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fortnitedropperlogo" />
+/
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="82dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7930281625187952/6514704329"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/challengeButton"></com.google.android.gms.ads.AdView>
+
+</android.support.constraint.ConstraintLayout>
